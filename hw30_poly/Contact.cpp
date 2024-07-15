@@ -16,6 +16,26 @@ Contact::~Contact()
 {
 }
 
+void Contact::setName(string name)
+{
+	this->name = name;
+}
+
+void Contact::setPhoneNumber(string phoneNumber)
+{
+	this->phoneNumber = phoneNumber;
+}
+
+string Contact::getName() const
+{
+	return name;
+}
+
+string Contact::getPhoneNumber() const
+{
+	return phoneNumber;
+}
+
 void Contact::showInfo() const
 {
 	cout << "Name: " << name << "\n";
