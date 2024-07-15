@@ -21,5 +21,15 @@ public:
 
     void showContacts() const;
 
+    void searchContacts(const string& name) const {
+        for (const auto& contact : contacts) {
+            if (contact.getName() == name) {
+                contact.showInfo();
+                return;
+            }
+        }
+        cout << "Contact not found.\n";
+    }
+
 };
 
