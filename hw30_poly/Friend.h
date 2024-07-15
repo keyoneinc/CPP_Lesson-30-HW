@@ -10,6 +10,7 @@ public:
     Friend();
     Friend(const string& name, const string& phoneNumber, const string& address, const string& birthday);
 
+    void editContact() override;
     void showInfo() const override;
 };
 

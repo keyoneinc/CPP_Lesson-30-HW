@@ -36,6 +36,14 @@ string Contact::getPhoneNumber() const
 	return phoneNumber;
 }
 
+void Contact::editContact()
+{
+	cout << "Enter edited name: ";
+	cin >> name;
+	cout << "Enter edited phone number: ";
+	cin >> phoneNumber;
+}
+
 void Contact::showInfo() const
 {
 	cout << "Name: " << name << "\n";

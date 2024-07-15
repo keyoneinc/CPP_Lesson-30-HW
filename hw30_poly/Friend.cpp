@@ -14,6 +14,15 @@ Friend::Friend(const string& name, const string& phoneNumber, const string& addr
 	this->birthday = birthday;
 }
 
+void Friend::editContact()
+{
+	Contact::editContact();
+	cout << "Enter edited address: ";
+	cin >> address;
+	cout << "Enter edited birthday: ";
+	cin >> birthday;
+}
+
 void Friend::showInfo() const
 {
 	Contact::showInfo();

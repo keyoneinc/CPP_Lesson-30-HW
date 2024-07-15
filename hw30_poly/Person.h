@@ -9,6 +9,7 @@ public:
     Person();
     Person(const string& name, const string& phoneNumber, const string& address);
 
+    void editContact() override;
     void showInfo() const override;
 
 };

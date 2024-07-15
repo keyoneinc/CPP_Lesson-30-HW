@@ -20,6 +20,7 @@ public:
     string getName() const;
     string getPhoneNumber() const;
     
+    virtual void editContact();
     virtual void showInfo() const;
 
 };

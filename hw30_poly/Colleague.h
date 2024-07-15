@@ -13,6 +13,7 @@ public:
     Colleague(const string& name, const string& phoneNumber, const string& organization,
         const string& address, const string& fax, const string& contactPerson);
 
+    void editContact() override;
     void showInfo() const override;
 };
 

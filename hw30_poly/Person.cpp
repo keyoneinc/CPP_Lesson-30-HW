@@ -12,6 +12,13 @@ Person::Person(const string& name, const string& phoneNumber, const string& addr
 	this->address = address;
 }
 
+void Person::editContact()
+{
+	Contact::editContact();
+	cout << "Enter edited address: ";
+	cin >> address;
+}
+
 void Person::showInfo() const
 {
 	Contact::showInfo();

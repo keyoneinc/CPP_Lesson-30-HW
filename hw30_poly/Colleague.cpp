@@ -18,6 +18,19 @@ Colleague::Colleague(const string& name, const string& phoneNumber, const string
     this->contactPerson = contactPerson;
 }
 
+void Colleague::editContact()
+{
+    Contact::editContact();
+    cout << "Enter edited organization: ";
+    cin >> organization;
+    cout << "Enter edited address: ";
+    cin >> address;
+    cout << "Enter edited fax: ";
+    cin >> fax;
+    cout << "Enter edited contact person: ";
+    cin >> contactPerson;
+}
+
 void Colleague::showInfo() const
 {
     Contact::showInfo();
